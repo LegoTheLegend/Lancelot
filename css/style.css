@@ -42,6 +42,13 @@ ul.header-nav > li > a {
         padding: 19px 10px;
 }
 
-ul.header-nav > li > a:hover {
-        background-color: red;
+.last-button {
+        background-color: orange;
+        border: none;
+        border-radius: 30px;
+        padding: 0 20px;
+}
+
+.last-button: hover {
+        background-color: grey;
 }
