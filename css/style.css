@@ -73,7 +73,7 @@ ul.header-nav > li.last-button > a:hover {
 }
 
 .product {
-        background: url("../images/header-background.jpg") center no-repeat;
+        background: url("../img/header-background.jpg") center no-repeat;
         height: 1000px;
         position: relative;
         margin-top: 60px;
@@ -116,4 +116,154 @@ ul.header-nav > li.last-button > a:hover {
 
         .product-cta:hover{
                 background-color: black;
+        }
+
+.the-product  {
+        text-align: center;
+}
+
+        .the-product-title{
+                color: #374848;
+                font-size: 79px;
+                padding-top: 40px;
+                text-transform: uppercase;
+        }
+
+        .the-product-description {
+                color: #8a9095;
+                font-size: 20px;
+                padding: 0 190px;
+                line-height: 44px;
+        }
+
+        .the-product-underscore {
+                font-size: 79px;
+                color: #eee;
+        }
+
+        .the-product-image {
+                position: relative;
+        }
+
+        .topright {
+                position: absolute;
+                color: #fff;
+                border-radius: 100px;
+                background-color: #0084ff;
+                font-size: 20px;
+                padding: 7px;
+                display: block;
+                width: 38px;
+                top: 50px;
+                left: 620px;
+                animation: doublePulse 1.5s ease
+        }
+
+        .bottomright {
+                position: absolute;
+                color: #fff;
+                border-radius: 100px;
+                background-color: #0084ff;
+                font-size: 20px;
+                padding: 7px;
+                display: block;
+                width: 38px;
+                top: 250px;
+                left: 530px;
+        }
+
+        .topleft {
+                position: absolute;
+                color: #fff;
+                border-radius: 100px;
+                background-color: #0084ff;
+                font-size: 20px;
+                padding: 7px;
+                display: block;
+                width: 38px;
+                top: 145px;
+                left: 320px
+        }
+
+        .bottomleft {
+                position: absolute;
+                color: #fff;
+                border-radius: 100px;
+                background-color: #0084ff;
+                font-size: 20px;
+                padding: 7px;
+                display: block;
+                width: 38px;
+                top: 360px;
+                left: 340px;
+        }
+
+        div.the-product-image > span:hover {
+                border: 2px solid;
+        }
+
+.how-it {
+        text-align: center;
+        position: relative;
+        background-color:  #f8fbfd;
+}
+        .how-it-title {
+                color: #374848;
+                font-size: 60px;
+                padding-top: 40px;
+                text-transform: uppercase;
+        }
+
+        .how-it-description {
+                color: #8a9095;
+                font-size: 20px;
+                padding: 0 180px;
+                line-height: 44px;
+        }
+
+        .connect-device {
+                display: inline-block;
+                float: left;
+                width: 33.333333%;
+        }
+
+        .configure {
+                display: inline-block;
+                width: 33.333333%;
+                position: absolute;
+                left: 33%;
+                top: 322px;
+        }
+
+        .done {
+                display: inline-block;
+                float: right;
+                width: 33.333333%;
+        }
+
+        .desktop-title {
+                font-size: 30px;
+                text-align: center;
+        }
+
+        .desktop-description {
+                text-align: center;
+                font-size: 17px;
+                color: #8a9095;
+                padding: 0 100px;
+        }
+        .leftarrow {
+                position: absolute;
+                top: 400px;
+                left: 550px;
+                width: 20px;
+                height: 30px;
+        }
+
+        .rightarrow {
+                position: absolute;
+                top: 400px;
+                right: 550px;
+                width: 20px;
+                height: 30px;
         }
