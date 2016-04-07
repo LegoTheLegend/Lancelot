@@ -124,7 +124,7 @@ ul.header-nav > li.last-button > a:hover {
 
         .the-product-title{
                 color: #374848;
-                font-size: 79px;
+                font-size: 60px;
                 padding-top: 40px;
                 text-transform: uppercase;
         }
@@ -223,24 +223,20 @@ ul.header-nav > li.last-button > a:hover {
 
         .connect-device {
                 display: inline-block;
-                width: 33.333333%;
-                position: absolute;
-                left: 40px;
+                width: 33%;
+                margin: 0;
         }
 
         .configure {
                 display: inline-block;
-                width: 33.333333%;
-                position: absolute;
-                left: 33%;
-                top: 325px;
+                width: 33%;
+                margin: 0;
         }
 
         .done {
                 display: inline-block;
-                width: 33.333333%;
-                position: absolute;
-                right: 40px;
+                width: 33%;
+                margin: 0;
         }
 
         .desktop-title {
@@ -252,20 +248,20 @@ ul.header-nav > li.last-button > a:hover {
                 text-align: center;
                 font-size: 17px;
                 color: #8a9095;
-                padding: 0 80px;
+                padding: 0 10px;
         }
         .leftarrow {
                 position: absolute;
-                top: 380px;
-                left: 620px;
+                top: 360px;
+                left: 640px;
                 width: 20px;
                 height: 30px;
         }
 
         .rightarrow {
                 position: absolute;
-                top: 380px;
-                right: 620px;
+                top: 360px;
+                right: 640px;
                 width: 20px;
                 height: 30px;
         }
