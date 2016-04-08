@@ -27,50 +27,47 @@ body {
 }
 
 .header {
-        height: 66px;
-}
-
+                height: 66px;
+        }
 .header-logo {
-        float: left;
-        display: block;
-        padding: 3px 0;
+                float: left;
+                display: block;
+        }
+.header-logo > img {
+    width: 150px;
+    padding: 8px 0;
 }
-
 ul.header-nav {
-        float: right;
-        padding: 3px 0;
-        margin: 0;
-        list-style-type: none;
-}
-
+                float: right;
+                padding: 3px 0;
+                margin: 0;
+                list-style-type: none;
+        }
 ul.header-nav > li {
-    display: inline-block;
-}
-
+                display: inline-block;
+        }
 ul.header-nav > li > a {
-        color: #8f969d;
-        text-decoration: none;
-        font-size: 18px;
-        text-transform: uppercase;
-        display: inline-block;
-        padding: 19px 10px;
-}
-
+                color: #8f969d;
+                text-decoration: none;
+                font-size: 18px;
+                text-transform: uppercase;
+                display: inline-block;
+                padding: 19px 10px;
+        }
 ul.header-nav > li > a:hover{
-        color: black;
-}
+                color: black;
+        }
 
 ul.header-nav > li.last-button > a {
-        background-color: #ff6622;
-        border: none;
-        border-radius: 30px;
-        padding: 11px 35px;
-        color: #fff;
-}
-
+                background-color: #ff6622;
+                border: none;
+                border-radius: 30px;
+                padding: 11px 35px;
+                color: #fff;
+        }
 ul.header-nav > li.last-button > a:hover {
-        background-color: black;
-}
+                background-color: black;
+        }
 
 .product {
         background: url("../img/header-background.jpg") center no-repeat;
@@ -79,21 +76,18 @@ ul.header-nav > li.last-button > a:hover {
         margin-top: 60px;
         text-align: center;
 }
-
-        .product-title{
+.product-title{
                 color: #374848;
                 font-size: 79px;
                 padding-top: 50px;
         }
-
-        .product-description {
+.product-description {
                 color: #8a9095;
                 font-size: 27px;
                 padding: 0 130px;
                 line-height: 44px;
         }
-
-        .product-cta {
+.product-cta {
                 color: #fff;
                 text-decoration: none;
                 text-transform: uppercase;
@@ -104,8 +98,7 @@ ul.header-nav > li.last-button > a:hover {
                 margin-top: 40px;
                 display: inline-block;
         }
-
-        .product-image {
+.product-image {
                 position: absolute;
                 width: 290px;
                 height: 328px;
@@ -113,155 +106,138 @@ ul.header-nav > li.last-button > a:hover {
                 left: 50%;
                 margin: 0 0 0 -125px;
         }
-
-        .product-cta:hover{
-                background-color: black;
-        }
-
-.the-product  {
-        text-align: center;
+.product-cta:hover{
+    background-color: black;
 }
 
-        .the-product-title{
-                color: #374848;
-                font-size: 60px;
-                padding-top: 40px;
-                text-transform: uppercase;
-        }
-
-        .the-product-description {
-                color: #8a9095;
-                font-size: 20px;
-                padding: 0 190px;
-                line-height: 44px;
-        }
-
-        .the-product-underscore {
-                font-size: 79px;
-                color: #eee;
-        }
-
-        .the-product-image {
-                position: relative;
-        }
-
-        .topright {
-                position: absolute;
-                color: #fff;
-                border-radius: 100px;
-                background-color: #0084ff;
-                font-size: 20px;
-                padding: 7px;
-                display: block;
-                width: 38px;
-                top: 50px;
-                left: 620px;
-                animation: doublePulse 1.5s ease
-        }
-
-        .bottomright {
-                position: absolute;
-                color: #fff;
-                border-radius: 100px;
-                background-color: #0084ff;
-                font-size: 20px;
-                padding: 7px;
-                display: block;
-                width: 38px;
-                top: 250px;
-                left: 530px;
-        }
-
-        .topleft {
-                position: absolute;
-                color: #fff;
-                border-radius: 100px;
-                background-color: #0084ff;
-                font-size: 20px;
-                padding: 7px;
-                display: block;
-                width: 38px;
-                top: 145px;
-                left: 320px
-        }
-
-        .bottomleft {
-                position: absolute;
-                color: #fff;
-                border-radius: 100px;
-                background-color: #0084ff;
-                font-size: 20px;
-                padding: 7px;
-                display: block;
-                width: 38px;
-                top: 360px;
-                left: 340px;
-        }
-
-        div.the-product-image > span:hover {
-                border: 2px solid;
-        }
-
-.how-it {
-        text-align: center;
-        position: relative;
-        background-color:  #f8fbfd;
+.section {
+    width: 100%;
+    background-color: #fff;
+    padding: 60px 0;
 }
-        .how-it-title {
-                color: #374848;
-                font-size: 60px;
-                padding-top: 40px;
-                text-transform: uppercase;
-        }
+.section .section-dark {
+    background-color: #f8fbfd;
+}
+.section .section-title {
+    color: #374048;
+    font-size: 48px;
+    text-transform: uppercase;
+    line-height: 29px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.section .section-description {
+    font-size: 20px;
+    color: #969da3;
+    line-height: 32px;
+    text-align: center;
+    width: 700px;
+    margin: 0 60px auto;
+    position: relative;
+    padding-bottom: 60px;
+}
+.section .section-description::after {
+    content: "";
+    position: absolute;
+    bottom: 28px;
+    left: calc(50% - (80px/2));
+    width: 80px;
+    height: 4px;
+    background-color: #eee;
+}
 
-        .how-it-description {
-                color: #8a9095;
-                font-size: 20px;
-                padding: 0 180px;
-                line-height: 44px;
-        }
+.product-section {}
+.product-section .product-section-watch {
+    background: url("../img/apple-watch-2.png") center no-repeat;
+    width: 347px;
+    height: 499px;
+    margin: 0 auto;
+    position: relative;
+}
+.product-section .product-section-watch > .watch-tip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #0c4eca;
+    border-radius: 50%;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+}
+.product-section .product-section-watch > .watch-tip:hover::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #0c4eca;
+    background-color: transparent;
+    border-radius: 50%;
+}
+.product-section .product-section-watch > .watch-tip:nth-child(1) {
+    top: 40px;
+    left: 18px;
+    right: initial;
+}
+.product-section .product-section-watch > .watch-tip:nth-child(2) {
+    top: 30px;
+    left: 30px;
+}
+.product-section .product-section-watch > .watch-tip:nth-child(3) {
+    top: 250px;
+    left: 225px;
+}
+.product-section .product-section-watch > .watch-tip:nth-child(4) {
+    top: initial;
+    bottom: 95px;
+    left: 5px;
+}
 
-        .connect-device {
-                display: inline-block;
-                width: 33%;
-                margin: 0;
-        }
+.hiw-section {}
+.hiw-steps {
+    position: relative;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.hiw-steps > .hiw-step {
+    float: left;
+    width: 33.333333%;
+    padding: 20px;
+    position: relative;
+}
+.hiw-steps > .hiw-step > .hiw-step-image {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+.hiw-steps > .hiw-step > .hiw-step-title {
+    color: #374048;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.hiw-steps > .hiw-step > .hiw-step-description {
+    color: #737c85;
+    font-size: 16px;
+    line-height: 26px;
+}
+.hiw-steps > .hiw-step > .hiw-step-arrow {
+    position: absolute;
+    display: block;
+    top: 40px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    border-top: 1px solid #a6afba;
+    border-right: 1px solid #a6afba;
+    transform: rotate(45deg);
+}
 
-        .configure {
-                display: inline-block;
-                width: 33%;
-                margin: 0;
-        }
 
-        .done {
-                display: inline-block;
-                width: 33%;
-                margin: 0;
-        }
 
-        .desktop-title {
-                font-size: 30px;
-                text-align: center;
-        }
-
-        .desktop-description {
-                text-align: center;
-                font-size: 17px;
-                color: #8a9095;
-                padding: 0 10px;
-        }
-        .leftarrow {
-                position: absolute;
-                top: 360px;
-                left: 640px;
-                width: 20px;
-                height: 30px;
-        }
-
-        .rightarrow {
-                position: absolute;
-                top: 360px;
-                right: 640px;
-                width: 20px;
-                height: 30px;
-        }
