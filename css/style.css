@@ -115,129 +115,238 @@ ul.header-nav > li.last-button > a:hover {
     background-color: #fff;
     padding: 60px 0;
 }
-.section .section-dark {
-    background-color: #f8fbfd;
+    .section.section-dark {
+        background-color: #f8fbfd;
 }
-.section .section-title {
-    color: #374048;
-    font-size: 48px;
-    text-transform: uppercase;
-    line-height: 29px;
-    text-align: center;
-    margin-bottom: 20px;
+    .section .section-title {
+        color: #374048;
+        font-size: 48px;
+        text-transform: uppercase;
+        line-height: 29px;
+        text-align: center;
+        margin-bottom: 20px;
 }
-.section .section-description {
-    font-size: 20px;
-    color: #969da3;
-    line-height: 32px;
-    text-align: center;
-    width: 700px;
-    margin: 0 60px auto;
-    position: relative;
-    padding-bottom: 60px;
+    .section .section-description {
+        font-size: 20px;
+        color: #969da3;
+        line-height: 32px;
+        text-align: center;
+        width: 700px;
+        margin: 60px auto 0 auto;
+        position: relative;
+        padding-bottom: 60px;
 }
-.section .section-description::after {
-    content: "";
-    position: absolute;
-    bottom: 28px;
-    left: calc(50% - (80px/2));
-    width: 80px;
-    height: 4px;
-    background-color: #eee;
+    .section .section-description::after {
+        content: "";
+        position: absolute;
+        bottom: 28px;
+        left: calc(50% - (80px/2));
+        width: 80px;
+        height: 4px;
+        background-color: #eee;
 }
 
 .product-section {}
-.product-section .product-section-watch {
-    background: url("../img/apple-watch-2.png") center no-repeat;
-    width: 347px;
-    height: 499px;
-    margin: 0 auto;
-    position: relative;
+    .product-section .product-section-watch {
+        background: url("../img/apple-watch-2.png") center no-repeat;
+        width: 347px;
+        height: 499px;
+        margin: 0 auto;
+        position: relative;
 }
-.product-section .product-section-watch > .watch-tip {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    background-color: #0c4eca;
-    border-radius: 50%;
-    color: #fff;
-    padding: 5px;
-    cursor: pointer;
+    .product-section .product-section-watch > .watch-tip {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 31px;
+        height: 31px;
+        background-color: #0c4eca;
+        border-radius: 100%;
+        color: #fff;
+        padding: 8px;
+        cursor: pointer;
+        line-height: 15px;
+        font-size: 18px;
+        text-align: center
 }
-.product-section .product-section-watch > .watch-tip:hover::before {
-    content: "";
-    position: absolute;
-    top: -7px;
-    left: -7px;
-    width: 40px;
-    height: 40px;
-    border: 3px solid #0c4eca;
-    background-color: transparent;
-    border-radius: 50%;
+    .product-section .product-section-watch > .watch-tip:hover::before {
+        content: "";
+        position: absolute;
+        top: -7px;
+        left: -7px;
+        width: 40px;
+        height: 40px;
+        border: 3px solid #0c4eca;
+        background-color: transparent;
+        border-radius: 50%;
 }
-.product-section .product-section-watch > .watch-tip:nth-child(1) {
-    top: 40px;
-    left: 18px;
-    right: initial;
+    .product-section .product-section-watch > .watch-tip:nth-child(1) {
+        top: 154px;
+        left: -5px;
 }
-.product-section .product-section-watch > .watch-tip:nth-child(2) {
-    top: 30px;
-    left: 30px;
+    .product-section .product-section-watch > .watch-tip:nth-child(2) {
+        top: 54px;
+        left: 299px;
 }
-.product-section .product-section-watch > .watch-tip:nth-child(3) {
-    top: 250px;
-    left: 225px;
+    .product-section .product-section-watch > .watch-tip:nth-child(3) {
+        top: 260px;
+        left: 215px;
 }
-.product-section .product-section-watch > .watch-tip:nth-child(4) {
-    top: initial;
-    bottom: 95px;
-    left: 5px;
+    .product-section .product-section-watch > .watch-tip:nth-child(4) {
+        top: 370px;
+        left: 4px;
 }
 
 .hiw-section {}
-.hiw-steps {
-    position: relative;
-    display: block;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    .hiw-steps {
+        position: relative;
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
 }
-.hiw-steps > .hiw-step {
-    float: left;
-    width: 33.333333%;
-    padding: 20px;
-    position: relative;
+    .hiw-steps > .hiw-step {
+        float: left;
+        width: 33.333333%;
+        padding: 20px;
+        position: relative;
 }
-.hiw-steps > .hiw-step > .hiw-step-image {
-    display: block;
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
+    .hiw-steps > .hiw-step > .hiw-step-image {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
 }
-.hiw-steps > .hiw-step > .hiw-step-title {
-    color: #374048;
-    font-size: 25px;
-    margin-bottom: 10px;
+    .hiw-steps > .hiw-step > .hiw-step-title {
+        color: #374048;
+        font-size: 25px;
+        margin-bottom: 10px;
 }
-.hiw-steps > .hiw-step > .hiw-step-description {
-    color: #737c85;
-    font-size: 16px;
-    line-height: 26px;
+    .hiw-steps > .hiw-step > .hiw-step-description {
+        color: #737c85;
+        font-size: 16px;
+        line-height: 26px;
 }
-.hiw-steps > .hiw-step > .hiw-step-arrow {
-    position: absolute;
-    display: block;
-    top: 40px;
-    right: -5px;
-    width: 20px;
-    height: 20px;
-    border-top: 1px solid #a6afba;
-    border-right: 1px solid #a6afba;
-    transform: rotate(45deg);
+    .hiw-steps > .hiw-step > .hiw-step-arrow {
+        position: absolute;
+        display: block;
+        top: 40px;
+        right: -5px;
+        width: 20px;
+        height: 20px;
+        border-top: 1px solid #a6afba;
+        border-right: 1px solid #a6afba;
+        transform: rotate(45deg);
 }
+
+.benefits {}
+    .bsteps {
+        position: relative;
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .bsteps > .bstep {
+        float: left;
+        width: 33.333333%;
+        padding: 20px;
+        position: relative;
+    }
+    .bsteps > .bstep > .bstep-title {
+        color: #374048;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .bsteps > .bstep > .bstep-description {
+        color: #82898f;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+.watch {}
+    .row {
+        display: block;
+        margin-bottom: 20px;
+        padding-bottom: 30px;
+    }
+    .column {
+        display: block;
+        width: 33.333333%;
+        padding: 20px;
+        position: relative;
+        float: left;
+    }
+    .column > .columnsteps {
+        positon: relative;
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .column > .columnsteps > .columnstep {}
+    .column > .columnsteps > .columnstep > .column-title {
+        color: #374048;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .column > .columnsteps > .columnstep > .column-description {
+        color: #82898f;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .column > .column-image {}
+
+.collection {}
+    .collection-steps {
+        position: relative;
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .collection-steps > .collection-step {
+        float: left;
+        width: 25%;
+        padding: 20px;
+        position: relative;
+        text-align: center;
+    }
+    .collection-steps > .collection-step > .collection-img {
+        display: block;
+        width: 230px;
+        height: 230px;
+        vertical-align: middle;
+    }
+    .collection-steps > .collection-step > .collection-title {
+        color: #FF1900;
+        font-size: 16px;
+        margin: 5px auto 0 auto;
+    }
+    .collection-steps > .collection-step > .collection-description {
+        color: #b4bcc3;
+        font-size: 13px;
+        margin: 2px auto;
+    }
+    .collection-steps > .collection-step > .collection-price {
+        color: #2FCA2D;
+        font-size: 19px;
+        padding: 10px auto;
+    }
+    .collection-steps > .collection-step > .collection-button {
+        text-decoration: none;
+        border-radius: 30px;
+        padding: 5px 20px;
+        border: 1px solid gray;
+        color: #969da3;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    .collection-steps > .collection-step > .collection-button:hover {
+        background-color: #374048;
+        color: #fff;
+    }
 
 
 
