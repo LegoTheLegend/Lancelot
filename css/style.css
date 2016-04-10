@@ -409,6 +409,7 @@ ul.header-nav > li.last-button > a:hover {
         height: 230px;
         vertical-align: middle;
         text-align: center;
+        padding-right: 16px;
     }
     .collection-steps > .collection-step > .collection-title {
         color: #FF1900;
@@ -429,8 +430,8 @@ ul.header-nav > li.last-button > a:hover {
         text-decoration: none;
         border-radius: 30px;
         padding: 5px 20px;
-        border: 1px solid gray;
-        color: #969da3;
+        border: 1px solid #e1e4e7;
+        color: #b4bcc3;
         text-transform: uppercase;
         font-size: 12px;
     }
