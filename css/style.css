@@ -367,6 +367,7 @@ ul.header-nav > li.last-button > a:hover {
         list-style: none;
         margin: 0;
         padding: 0;
+        padding-top: 38px;
     }
     .column > .columnsteps > .columnstep {
         position: relative;
