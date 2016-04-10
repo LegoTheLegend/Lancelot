@@ -18,7 +18,7 @@ body {
 }
 
 .header-wrapper {
-        background-color: #E6E7E8;
+        background-color: #f8fbfd;
         position: fixed;
         top: 0;
         left: 0;
@@ -231,7 +231,7 @@ ul.header-nav > li.last-button > a:hover {
     .hiw-steps > .hiw-step > .hiw-step-arrow {
         position: absolute;
         display: block;
-        top: 40px;
+        top: 60px;
         right: -5px;
         width: 20px;
         height: 20px;
@@ -239,6 +239,87 @@ ul.header-nav > li.last-button > a:hover {
         border-right: 1px solid #a6afba;
         transform: rotate(45deg);
 }
+
+@font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/font/Flaticon.eot");
+    src: url("../fonts/font/Flaticon.eot#iefix") format("embedded-opentype"),
+         url("../fonts/font/Flaticon.woff") format("woff"),
+         url("../fonts/font/Flaticon.ttf") format("truetype"),
+         url("../fonts/font/Flaticon.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+.flaticons {
+    font-family: "Flaticon", sans-serif;
+    display: inline-block;
+    font-style: normal;
+    font-size: 35px;
+    color: #FF1900;
+    position: absolute;
+    top: 34px;
+    left: 3px;
+}
+    .icon-loc:before {
+        content: "\f113";
+    }
+    .icon-heart:before {
+        content: "\f110";
+    }
+    .icon-sec:before {
+        content: "\f114";
+    }
+    .icon-idea:before {
+        content: "\f122";
+    }
+    .icon-save:before {
+        content: "\f100";
+    }
+    .icon-tec:before {
+        content: "\f104";
+    }
+    .icon-key:before {
+        content: "\f121";
+        top: -28px;
+        left: -7px;
+        position: absolute;
+        font-size: 30px;
+    }
+    .icon-voice:before {
+        content: "\f101";
+        top: -28px;
+        left: -7px;
+        position: absolute;
+        font-size: 30px;
+    }
+    .icon-apps:before {
+        content: "\f108";
+        top: -28px;
+        left: -7px;
+        position: absolute;
+        font-size: 30px;
+    }
+    .icon-stay:before {
+        content: "\f112";
+        top: -28px;
+        left: -7px;
+        position: absolute;
+        font-size: 30px;
+    }
+    .icon-des:before {
+        content: "\f12a";
+        top: -28px;
+        left: -7px;
+        position: absolute;
+        font-size: 30px;
+    }
+    .icon-time:before {
+        content: "\f12e";
+        top: -28px;
+        left: -7px;
+        position: absolute;
+        font-size: 30px;
+    }
 
 .benefits {}
     .bsteps {
@@ -251,18 +332,20 @@ ul.header-nav > li.last-button > a:hover {
     .bsteps > .bstep {
         float: left;
         width: 33.333333%;
-        padding: 20px;
+        padding: 5px;
         position: relative;
     }
     .bsteps > .bstep > .bstep-title {
         color: #374048;
         font-size: 25px;
         margin-bottom: 10px;
+        padding-left: 40px;
     }
     .bsteps > .bstep > .bstep-description {
         color: #82898f;
         font-size: 16px;
         line-height: 26px;
+        padding-left: 40px;
     }
 
 .watch {}
@@ -274,7 +357,7 @@ ul.header-nav > li.last-button > a:hover {
     .column {
         display: block;
         width: 33.333333%;
-        padding: 20px;
+        padding: 5px;
         position: relative;
         float: left;
     }
@@ -285,16 +368,20 @@ ul.header-nav > li.last-button > a:hover {
         margin: 0;
         padding: 0;
     }
-    .column > .columnsteps > .columnstep {}
+    .column > .columnsteps > .columnstep {
+        position: relative;
+    }
     .column > .columnsteps > .columnstep > .column-title {
         color: #374048;
         font-size: 25px;
         margin-bottom: 10px;
+        padding-left: 35px;
     }
     .column > .columnsteps > .columnstep > .column-description {
         color: #82898f;
         font-size: 16px;
         line-height: 26px;
+        padding-left: 35px;
     }
     .column > .column-image {}
 
@@ -318,6 +405,7 @@ ul.header-nav > li.last-button > a:hover {
         width: 230px;
         height: 230px;
         vertical-align: middle;
+        text-align: center;
     }
     .collection-steps > .collection-step > .collection-title {
         color: #FF1900;
