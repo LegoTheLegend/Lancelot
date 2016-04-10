@@ -257,7 +257,7 @@ ul.header-nav > li.last-button > a:hover {
     font-size: 35px;
     color: #FF1900;
     position: absolute;
-    top: 34px;
+    top: 30px;
     left: 3px;
 }
     .icon-loc:before {
@@ -337,15 +337,15 @@ ul.header-nav > li.last-button > a:hover {
     }
     .bsteps > .bstep > .bstep-title {
         color: #374048;
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 10px;
-        padding-left: 40px;
+        padding-left: 50px;
     }
     .bsteps > .bstep > .bstep-description {
         color: #82898f;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 26px;
-        padding-left: 40px;
+        padding-left: 50px;
     }
 
 .watch {}
@@ -373,17 +373,19 @@ ul.header-nav > li.last-button > a:hover {
     }
     .column > .columnsteps > .columnstep > .column-title {
         color: #374048;
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 10px;
-        padding-left: 35px;
+        padding-left: 45px;
     }
     .column > .columnsteps > .columnstep > .column-description {
         color: #82898f;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 26px;
-        padding-left: 35px;
+        padding-left: 45px;
     }
-    .column > .column-image {}
+    .column > .column-image {
+        padding-left: 17px;
+    }
 
 .collection {}
     .collection-steps {
