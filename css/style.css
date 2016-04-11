@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/flaticons/font/Flaticon.eot");
+    src: url("../fonts/flaticons/font/Flaticon.eot#iefix") format("embedded-opentype"),
+    url("../fonts/flaticons/font/Flaticon.woff") format("woff"),
+    url("../fonts/flaticons/font/Flaticon.ttf") format("truetype"),
+    url("../fonts/flaticons/font/Flaticon.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
         margin: 0;
         font-family: sans-serif;
@@ -118,7 +130,7 @@ ul.header-nav > li.last-button > a:hover {
     .section.section-dark {
         background-color: #f8fbfd;
 }
-    .section .section-title {
+    .section  .section-title {
         color: #374048;
         font-size: 48px;
         text-transform: uppercase;
@@ -240,16 +252,6 @@ ul.header-nav > li.last-button > a:hover {
         transform: rotate(45deg);
 }
 
-@font-face {
-    font-family: "Flaticon";
-    src: url("../fonts/font/Flaticon.eot");
-    src: url("../fonts/font/Flaticon.eot#iefix") format("embedded-opentype"),
-         url("../fonts/font/Flaticon.woff") format("woff"),
-         url("../fonts/font/Flaticon.ttf") format("truetype"),
-         url("../fonts/font/Flaticon.svg") format("svg");
-    font-weight: normal;
-    font-style: normal;
-}
 .flaticons {
     font-family: "Flaticon", sans-serif;
     display: inline-block;
@@ -440,5 +442,76 @@ ul.header-nav > li.last-button > a:hover {
         color: #fff;
     }
 
+.big-watch {}
+    .big-watch > .row1{
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    .rowleft {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        float: left;
+    }
+    .rowright {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        float: right;
+    }
+    .big-watch-title {
+        text-align: left;
+        color: #374048;
+        font-size: 48px;
+        text-transform: uppercase;
+        line-height: 29px;
+        margin-bottom: 0;
+    }
+    .big-watch-description {
+        text-align: left;
+        font-size: 20px;
+        color: #969da3;
+        line-height: 32px;
+        margin: 25px auto 0 auto;
+        position: relative;
+        padding-bottom: 60px;
+    }
+    .big-watch-description::after {
+        content: "";
+        position: absolute;
+        bottom: 28px;
+        left: 0;
+        width: 80px;
+        height: 6px;
+        background-color: #eee;
+    }
+    .big-watch-steps {
+        position: relative;
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .big-watch-steps > .big-watch-step {
+        color: #696f74;
+        font-size: 20px;
+    }
+    .big-watch-steps > .big-watch-step > .big-watch-list:before {
+        width: 32px;
+        height: 32px;
+        margin-right: 17px;
+        content: '';
+        background: url(../img/check.png) no-repeat scroll 0 0;
+        float: left;
+    }
+    .big-watch-img {
+        padding-left: 180px;
+    }
 
-
+.apps {}
+    .apps-row {}
+    .apps-split {}
+    .apps-split .topleft {}
