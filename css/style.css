@@ -8,7 +8,76 @@
     font-weight: normal;
     font-style: normal;
 }
-
+.flaticons {
+    font-family: "Flaticon", sans-serif;
+    display: inline-block;
+    font-style: normal;
+    font-size: 35px;
+    color: #FF1900;
+    position: absolute;
+    top: 30px;
+    left: 3px;
+    }
+    .icon-loc:before {
+        content: "\f113";
+    }
+    .icon-heart:before {
+        content: "\f110";
+    }
+    .icon-sec:before {
+        content: "\f114";
+    }
+    .icon-idea:before {
+        content: "\f122";
+    }
+    .icon-save:before {
+        content: "\f100";
+    }
+    .icon-tec:before {
+        content: "\f104";
+    }
+    .icon-key:before {
+        content: "\f121";
+        top: -28px;
+        left: -7px;
+        position: absolute;
+        font-size: 30px;
+    }
+    .icon-voice:before {
+        content: "\f101";
+        top: -28px;
+        left: -7px;
+        position: absolute;
+        font-size: 30px;
+    }
+    .icon-apps:before {
+        content: "\f108";
+        top: -28px;
+        left: -7px;
+        position: absolute;
+        font-size: 30px;
+    }
+    .icon-stay:before {
+        content: "\f112";
+        top: -28px;
+        left: -7px;
+        position: absolute;
+        font-size: 30px;
+    }
+    .icon-des:before {
+        content: "\f12a";
+        top: -28px;
+        left: -7px;
+        position: absolute;
+        font-size: 30px;
+    }
+    .icon-time:before {
+        content: "\f12e";
+        top: -28px;
+        left: -7px;
+        position: absolute;
+        font-size: 30px;
+    }
 
 body {
         margin: 0;
@@ -252,77 +321,6 @@ ul.header-nav > li.last-button > a:hover {
         transform: rotate(45deg);
 }
 
-.flaticons {
-    font-family: "Flaticon", sans-serif;
-    display: inline-block;
-    font-style: normal;
-    font-size: 35px;
-    color: #FF1900;
-    position: absolute;
-    top: 30px;
-    left: 3px;
-}
-    .icon-loc:before {
-        content: "\f113";
-    }
-    .icon-heart:before {
-        content: "\f110";
-    }
-    .icon-sec:before {
-        content: "\f114";
-    }
-    .icon-idea:before {
-        content: "\f122";
-    }
-    .icon-save:before {
-        content: "\f100";
-    }
-    .icon-tec:before {
-        content: "\f104";
-    }
-    .icon-key:before {
-        content: "\f121";
-        top: -28px;
-        left: -7px;
-        position: absolute;
-        font-size: 30px;
-    }
-    .icon-voice:before {
-        content: "\f101";
-        top: -28px;
-        left: -7px;
-        position: absolute;
-        font-size: 30px;
-    }
-    .icon-apps:before {
-        content: "\f108";
-        top: -28px;
-        left: -7px;
-        position: absolute;
-        font-size: 30px;
-    }
-    .icon-stay:before {
-        content: "\f112";
-        top: -28px;
-        left: -7px;
-        position: absolute;
-        font-size: 30px;
-    }
-    .icon-des:before {
-        content: "\f12a";
-        top: -28px;
-        left: -7px;
-        position: absolute;
-        font-size: 30px;
-    }
-    .icon-time:before {
-        content: "\f12e";
-        top: -28px;
-        left: -7px;
-        position: absolute;
-        font-size: 30px;
-    }
-
 .benefits {}
     .bsteps {
         position: relative;
@@ -364,7 +362,7 @@ ul.header-nav > li.last-button > a:hover {
         float: left;
     }
     .column > .columnsteps {
-        positon: relative;
+        position: relative;
         display: block;
         list-style: none;
         margin: 0;
@@ -512,6 +510,40 @@ ul.header-nav > li.last-button > a:hover {
     }
 
 .apps {}
-    .apps-row {}
-    .apps-split {}
-    .apps-split .topleft {}
+    .apps-row {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        height: 921px;
+        vertical-align: middle;
+    }
+    .apps-row > .apps-steps {
+        position: relative;
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .apps-row > .apps-steps > .apps-step {
+        float: left;
+        width: 50%;
+        padding: 0;
+        position: relative;
+        margin: 0;
+        height: 459px;
+    }
+    .apps-row > .apps-steps > .botright {}
+    .apps-row > .apps-steps > .apps-step > .botleft {
+        padding-left: 270px;
+        padding-right: 60px;
+    }
+    .apps-title {
+        color: #374048;
+        font-size: 35px;
+        padding: 95px 40px 5px 40px;
+    }
+    .apps-description {
+        color: #c0cad0;
+        font-size: 18px;
+        padding: 0px 270px 60px 40px;
+    }
