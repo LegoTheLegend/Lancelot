@@ -205,7 +205,6 @@ ul.header-nav > li.last-button > a:hover {
         text-transform: uppercase;
         line-height: 29px;
         text-align: center;
-        margin-bottom: 20px;
 }
     .section .section-description {
         font-size: 20px;
@@ -213,7 +212,7 @@ ul.header-nav > li.last-button > a:hover {
         line-height: 32px;
         text-align: center;
         width: 700px;
-        margin: 60px auto 0 auto;
+        margin: 30px auto 0 auto;
         position: relative;
         padding-bottom: 60px;
 }
@@ -223,7 +222,7 @@ ul.header-nav > li.last-button > a:hover {
         bottom: 28px;
         left: calc(50% - (80px/2));
         width: 80px;
-        height: 4px;
+        height: 6px;
         background-color: #eee;
 }
 
@@ -328,12 +327,14 @@ ul.header-nav > li.last-button > a:hover {
         list-style: none;
         margin: 0;
         padding: 0;
+        margin-top: 40px;
     }
     .bsteps > .bstep {
         float: left;
         width: 33.333333%;
         padding: 5px;
         position: relative;
+        padding-bottom: 30px;
     }
     .bsteps > .bstep > .bstep-title {
         color: #374048;
@@ -353,6 +354,7 @@ ul.header-nav > li.last-button > a:hover {
         display: block;
         margin-bottom: 20px;
         padding-bottom: 30px;
+        padding-top: 30px;
     }
     .column {
         display: block;
@@ -510,40 +512,120 @@ ul.header-nav > li.last-button > a:hover {
     }
 
 .apps {}
-    .apps-row {
-        margin: 0;
-        padding: 0;
-        position: relative;
-        height: 921px;
-        vertical-align: middle;
-    }
-    .apps-row > .apps-steps {
+    .apps-steps {
         position: relative;
         display: block;
         list-style: none;
         margin: 0;
         padding: 0;
     }
-    .apps-row > .apps-steps > .apps-step {
+    .apps-steps > .apps-step {
         float: left;
         width: 50%;
-        padding: 0;
         position: relative;
-        margin: 0;
-        height: 459px;
+        height: 292px;
     }
-    .apps-row > .apps-steps > .botright {}
-    .apps-row > .apps-steps > .apps-step > .botleft {
-        padding-left: 270px;
-        padding-right: 60px;
+    .apps-steps > .apps-step > .botleft {
+        padding-right: 30px;
     }
-    .apps-title {
+    .apps-steps > .apps-step > .apps-title {
         color: #374048;
         font-size: 35px;
-        padding: 95px 40px 5px 40px;
+        padding-left: 30px;
     }
-    .apps-description {
+    .apps-steps > .apps-step > .apps-description {
         color: #c0cad0;
         font-size: 18px;
-        padding: 0px 270px 60px 40px;
+        padding-left: 30px;
+        line-height: 30px;
     }
+
+.reviews {}
+    .review-steps {
+        position: relative;
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .review-steps > .review-step {
+        float: left;
+        width: 33.333333%;
+        padding: 20px;
+        position: relative;
+    }
+    .review-steps > .review-step > .review-description {
+        color: #353535;
+        font-size: 17px;
+        line-height: 29px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .review-steps > .review-step > .quote-img {
+        padding-left: 42%;
+    }
+    .review-steps > .review-step > .review-img {
+        padding-left: 17%;
+        margin-bottom: 100px;
+    }
+    .featured-title {
+        text-transform: uppercase;
+        text-align: center;
+        color: #374048;
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .featured-row {
+        position: relative;
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .featured-row > .featured-img {
+        float: left;
+        width: 16.666666%;
+        padding: 5px;
+        position: relative;
+        vertical-align: middle;
+        padding-bottom: 50px;
+    }
+
+.faq {}
+    .faq-mail {
+        color: #0084ff;
+        text-decoration: none;
+    }
+    .faq-mail:hover {
+        color: midnightblue;
+    }
+    .faq-row {
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .faq-row > .faq-step {
+        float: left;
+        width: 50%;
+        padding: 20px;
+        position: relative;
+    }
+    .faq-row > .faq-step > .faq-title {
+        color: #374048;
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .faq-row > .faq-step > .faq-description {
+        color: #82898f;
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 5px;
+    }
+
+.iconed-list {}
+    .iconed-list > .iconed-list-item {}
+    .iconed-list.iconed-list-item-icon {}
+    .iconed-list.iconed-list-item-content {}
+    .iconed-list.iconed-list-item-title {}
+    .iconed-list.iconed-list-item-descritption {}
