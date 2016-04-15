@@ -143,7 +143,7 @@ ul.header-nav > li.last-button > a {
                 background-color: #ff6622;
                 border: none;
                 border-radius: 30px;
-                padding: 11px 35px;
+                padding: 9px 30px;
                 color: #fff;
         }
 ul.header-nav > li.last-button > a:hover {
@@ -395,13 +395,13 @@ ul.header-nav > li.last-button > a:hover {
         position: relative;
         display: block;
         list-style: none;
-        margin: 0;
+        margin: 0 -20px;
         padding: 0;
     }
     .collection-steps > .collection-step {
         float: left;
         width: 25%;
-        padding: 20px;
+        padding: 40px 20px;
         position: relative;
         text-align: center;
     }
@@ -411,7 +411,6 @@ ul.header-nav > li.last-button > a:hover {
         height: 230px;
         vertical-align: middle;
         text-align: center;
-        padding-right: 16px;
     }
     .collection-steps > .collection-step > .collection-title {
         color: #FF1900;
@@ -431,7 +430,7 @@ ul.header-nav > li.last-button > a:hover {
     .collection-steps > .collection-step > .collection-button {
         text-decoration: none;
         border-radius: 30px;
-        padding: 5px 20px;
+        padding: 7px 30px;
         border: 1px solid #e1e4e7;
         color: #b4bcc3;
         text-transform: uppercase;
@@ -469,6 +468,7 @@ ul.header-nav > li.last-button > a:hover {
         text-transform: uppercase;
         line-height: 29px;
         margin-bottom: 0;
+        margin-top: 70px;
     }
     .big-watch-description {
         text-align: left;
@@ -593,11 +593,11 @@ ul.header-nav > li.last-button > a:hover {
 
 .faq {}
     .faq-mail {
-        color: #0084ff;
+        color: #FF1900;
         text-decoration: none;
     }
     .faq-mail:hover {
-        color: midnightblue;
+        color: darkslategray;
     }
     .faq-row {
         position: relative;
@@ -623,9 +623,102 @@ ul.header-nav > li.last-button > a:hover {
         margin-top: 5px;
     }
 
-.iconed-list {}
-    .iconed-list > .iconed-list-item {}
-    .iconed-list.iconed-list-item-icon {}
-    .iconed-list.iconed-list-item-content {}
-    .iconed-list.iconed-list-item-title {}
-    .iconed-list.iconed-list-item-descritption {}
+.tech-specs {}
+    .specs-steps {
+        position: relative;
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .specs-steps > .specs-step {
+        float: left;
+        width: 33.333333%;
+        padding: 20px 60px 40px 60px;
+        position: relative;
+        border-top: 1px solid #ebebeb;
+    }
+    .specs-steps > .specs-step > .specs-step-title {
+        color: #374048;
+        font-size: 20px;
+    }
+    .specs-steps > .specs-step > .specs-step-description {
+        color: #82898f;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+.meet-team {}
+    .team-steps {
+        position: relative;
+        display: block;
+        list-style: none;
+        margin: 0 -20px;
+        padding: 20px 0 40px 0;
+    }
+    .team-steps > .team-step {
+        float: left;
+        width: 25%;
+        padding: 20px;
+        position: relative;
+        text-align: center;
+        background-color: #fff;
+    }
+    .team-steps > .team-step > .team-img {
+        width: 220px;
+    }
+    .team-steps > .team-step > .team-name {
+        color: #374048;
+        font-size: 20px;
+        line-height: 1;
+        margin-bottom: 0;
+    }
+    .team-steps > .team-step > .team-description {
+        color: #82898f;
+        font-size: 14px;
+        line-height: 1;
+    }
+
+.timeline {}
+    .timeline-row {
+        position: relative;
+    }
+    .timeline-row:before {
+        content: '';
+        width: 8px;
+        height: 100%;
+        display: block;
+        position: absolute;
+        left: calc(50% - 4px);
+        background-color: #dee0e2;
+    }
+    .timeline-row > .timeline-post {
+        position: relative;
+        margin: 49px 0 0 0;
+        padding: 0;
+        text-align: center;
+    }
+    .timeline-row > .timeline-post > .timeline-post-now {
+        color: #bfc2c5;
+        background: #dee0e2;
+        padding: 0px 30px;
+        display: inline-block;
+        font-size: 15px;
+        line-height: 35px;
+        border-radius: 4px;
+        position: relative;
+        text-transform: uppercase;
+    }
+    .timeline-row > .timeline-post:before {
+        content: '';
+        width: 24px;
+        height: 24px;
+        display: block;
+        border: 6px solid;
+        border-radius: 100%;
+        position: absolute;
+        top: 15px;
+        left: -12px;
+        border-color: #dee0e2;
+        background-color: #fff;
+    }
