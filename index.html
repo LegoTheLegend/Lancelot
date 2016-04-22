@@ -6,8 +6,26 @@
                 <link rel="stylesheet" href="css/style.css">
                 <link rel="stylesheet" href="css/font-awesome.css">
         </head>
+
         <body>
-             <div class="header-wrapper">
+
+        <script>
+            function initMap() {
+                var mapDiv = document.getElementById('map');
+                var map = new google.maps.Map(mapDiv, {
+                    center: {lat: 37.3818288, lng: -122.0636325},
+                    zoom: 16,
+                    scrollwheel: false,
+                    navigationControl: false,
+                    mapTypeControl: false,
+                    scaleControl: false,
+                    draggable: false
+                });
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+
+            <div class="header-wrapper">
                  <header class="container header clearfix">
                      <a href="#" class="header-logo">
                          <img src="img/logo.png" alt="Logo">
@@ -367,12 +385,13 @@
             </section>
 
             <section class="apps">
-                <div class="container clearfix">
-                    <ul class="apps-steps">
-                        <li class="apps-step">
-                            <img src="img/split-1.jpg" alt="split" width="100%">
-                        </li>
-                        <li class="apps-step">
+                <div class="apps-wrapper clearfix">
+                    <div class="split-top clearfix">
+                        <div class="top-left">
+                            <img src="img/split-1.jpg" alt="split" class="top-left-img">
+                        </div>
+                        <div class="top-right-wrapper">
+                            <div class="top-right">
                             <h2 class="apps-title">
                                 Every Apps you wanted
                             </h2>
@@ -382,22 +401,27 @@
                                 Communicating with Watch is discreet, sophisticated, and nuanced. a whole new way to
                                 connect with others.
                             </p>
-                        </li>
-                        <li class="apps-step">
-                            <h2 class="apps-title botleft">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="split-bot clearfix">
+                        <div class="bot-left-wrapper">
+                            <div class="bot-left">
+                            <h2 class="apps-title">
                                 Health and Fitness
                             </h2>
-                            <p class="apps-description botleft">
+                            <p class="apps-description">
                                 Fitness isn’t just about running, biking, or hitting the gym.
                                 It’s also about being active throughout the day. Watch measures all the ways you move,
                                 such as walking the dog, taking the stairs, or playing with your kids.
                                 It even keeps track of when you stand up.
                             </p>
-                        </li>
-                        <li class="apps-step botright">
-                            <img src="img/split-2.jpg" alt="split" width="100%">
-                        </li>
-                    </ul>
+                            </div>
+                        </div>
+                        <div class="bot-right">
+                            <img src="img/split-2.jpg" alt="split" class="bot-right-img">
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -651,44 +675,44 @@
                         We are a small group of inverntors, hackers and designers from the differrent
                         parts of the world on a mission.
                     </p>
-                    <ul class="team-steps clearfix">
-                        <li class="team-step">
-                            <img src="img/team-1.jpg" alt="team" class="team-img">
-                            <h4 class="team-name">
+                    <div class="team-members-wrapper clearfix">
+                        <div class="team-members clearfix">
+                            <img src="img/team-1.jpg" class="team-members-photos">
+                            <h4 class="team-member-name">
                                 Gary Elliott
                             </h4>
-                            <p class="team-description">
+                            <p class="team-member-position">
                                 Co-Founder and CEO
                             </p>
-                        </li>
-                        <li class="team-step">
-                            <img src="img/team-2.jpg" alt="team" class="team-img">
-                            <h4 class="team-name">
+                        </div>
+                        <div class="team-members clearfix">
+                            <img src="img/team-2.jpg" class="team-members-photos">
+                            <h4 class="team-member-name">
                                 Jeffrey Allen
                             </h4>
-                            <p class="team-description">
+                            <p class="team-member-position">
                                 Co-Founder and CTO
                             </p>
-                        </li>
-                        <li class="team-step">
-                            <img src="img/team-3.jpg" alt="team" class="team-img">
-                            <h4 class="team-name">
+                        </div>
+                        <div class="team-members clearfix">
+                            <img src="img/team-3.jpg" class="team-members-photos">
+                            <h4 class="team-member-name">
                                 Sara Mendez
                             </h4>
-                            <p class="team-description">
+                            <p class="team-member-position">
                                 Lead Developer, Hacker
                             </p>
-                        </li>
-                        <li class="team-step">
-                            <img src="img/team-4.jpg" alt="team" class="team-img">
-                            <h4 class="team-name">
+                        </div>
+                        <div class="team-members clearfix">
+                            <img src="img/team-4.jpg" class="team-members-photos">
+                            <h4 class="team-member-name">
                                 Albert Castro
                             </h4>
-                            <p class="team-description">
+                            <p class="team-member-position">
                                 3D Designer & Prototyper
                             </p>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -788,26 +812,117 @@
                         Subscribe to our product newsletter to get notified when we launch the product
                         or when we completed a milestone
                     </p>
-                    <form class="newsletter-form" method="post">
-                        <div class="input-group clearfix">
-                            <input type="email" class="form-control" name="email" placeholder="Enter Your Email Address">
-                            <button type="submit" class="input-group-addon">
-                                <span>
-                                    <img src="img/right-angle-white.png" alt="angle">
-                                </span>
-                            </button>
-                        </div>
-                    </form>
-                    <p class="newsletter-text">
-                        <img src="img/protect.png" alt="lock">
-                        No Spam. We Promise. Unsubscribe anytime.
-                    </p>
+                    <div class="email-block">
+                        <form action="#" class="email-form" method="post" novalidate="novalidate">
+                            <div class="input-block">
+                                <input type="email" class="form-control" name="email" placeholder="Enter Your Email Address">
+                            <span class="input-group-addon">
+                                <button type="submit" class="subscribe-button">
+                                    <img src="img/right-angle-white.png" alt="" class="angle">
+                                </button>
+                            </span>
+                            </div>
+                            <div id="js-subscribe-result" class="text-center"
+                                 data-success-msg="Almost finished. Please check your email and verify."
+                                 data-error-msg="Oops. Something went wrong.">
+                                <p class="mail-underline">
+                                    <img src="img/protect.png" class="lock" alt="">No Spam. We Promise. Unsubscribe
+                                    anytime.
+                                </p>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </section>
 
-            <section class="section map">
-
+            <section class="section map-section">
+                <div id="map"></div>
+                <div class="get-in-touch">
+                    <h1>
+                        GET IN TOUCH
+                    </h1>
+                    <ul class="contact-list">
+                        <li class="location">
+                            <span class="fa fa-map-marker m-marker"></span>
+                            <p class="get-description">523 Sylvan Ave, 5th Floor <br>
+                            Mountain View, CA 94041USA</p>
+                        </li>
+                        <li class="phone-number">
+                            <span class="fa fa-phone m-phone"></span>
+                            <p class="get-description">+1 (234) 56789 <br>
+                            +1 987 654 3210</p>
+                        </li>
+                        <li class="email-adress">
+                            <span class="fa fa-envelope m-letter"></span>
+                            <p class="get-description">Support@watchland.com</p>
+                        </li>
+                    </ul>
+                    <div class="contact-button">
+                        CONTACT US
+                    </div>
+                </div>
             </section>
+
+            <footer class="section footer">
+                <div class="container">
+                    <div class="social-links">
+                        <ul class="links-icons clearfix">
+                            <li class="link-step">
+                                <a href="#" class="fa-stack fa-2x">
+                                    <span class="fa fa-facebook fa-stack-1x m-link"></span>
+                                </a>
+                            </li>
+                            <li class="link-step">
+                                <a href="#" class="fa-stack fa-2x">
+                                    <span class="fa fa-twitter fa-stack-1x m-link"></span>
+                                </a>
+                            </li>
+                            <li class="link-step">
+                                <a href="#" class="fa-stack fa-2x">
+                                    <span class="fa fa-linkedin fa-stack-1x m-link"></span>
+                                </a>
+                            </li>
+                            <li class="link-step">
+                                <a href="#" class="fa-stack fa-2x">
+                                    <span class="fa fa-youtube fa-stack-1x m-link"></span>
+                                </a>
+                            </li>
+                            <li class="link-step">
+                                <a href="#" class="fa-stack fa-2x">
+                                    <span class="fa fa-google-plus fa-stack-1x m-link"></span>
+                                </a>
+                            </li>
+                            <li class="link-step">
+                                <a href="#" class="fa-stack fa-2x">
+                                    <span class="fa fa-pinterest fa-stack-1x m-link"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-rights">
+                        <ul class="rights-steps clearfix">
+                            <li class="rights-step">
+                                <a href="#">About</a>
+                            </li>
+                            <li class="rights-step">
+                                <a href="#">Terms of Use</a>
+                            </li>
+                            <li class="rights-step">
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li class="rights-step">
+                                <a href="#">Mobile App</a>
+                            </li>
+                            <li class="rights-step">
+                                <a href="#">PressKit</a>
+                            </li>
+                        </ul>
+                        <p class="copyright">
+                            Copyright © 2016. Proland. All rights reserved
+                        </p>
+                    </div>
+                </div>
+            </footer>
 
         </body>
 </html>
